@@ -31,6 +31,10 @@ interface Array<T> { length: number; [n: number]: T; }
     // "disableSolutionSearching": true,                 /* Opt a project out of multi-project reference checking when editing. */
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
+    /* Completeness */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+
     /* Language and Environment */
     "target": "es5",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
@@ -94,7 +98,7 @@ interface Array<T> { length: number; [n: number]: T; }
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
 
     /* Type Checking */
-    "strict": true,                                      /* Enable all strict type-checking options. */
+    "strict": true                                       /* Enable all strict type-checking options. */
     // "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied `any` type.. */
     // "strictNullChecks": true,                         /* When type checking, take into account `null` and `undefined`. */
     // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
@@ -113,10 +117,6 @@ interface Array<T> { length: number; [n: number]: T; }
     // "noPropertyAccessFromIndexSignature": true,       /* Enforces using indexed accessors for keys declared using an indexed type */
     // "allowUnusedLabels": true,                        /* Disable error reporting for unused labels. */
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
-
-    /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
 }
 
@@ -132,7 +132,7 @@ Output::
 
 
 Program root files: ["/user/username/projects/myproject/file1.ts","/user/username/projects/myproject/src/file2.ts"]
-Program options: {"target":1,"module":2,"outFile":"/user/username/projects/myproject/build/outFile.js","esModuleInterop":true,"forceConsistentCasingInFileNames":true,"strict":true,"skipLibCheck":true,"watch":true,"project":"/user/username/projects/myproject/tsconfig.json","configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+Program options: {"skipLibCheck":true,"target":1,"module":2,"outFile":"/user/username/projects/myproject/build/outFile.js","esModuleInterop":true,"forceConsistentCasingInFileNames":true,"strict":true,"watch":true,"project":"/user/username/projects/myproject/tsconfig.json","configFilePath":"/user/username/projects/myproject/tsconfig.json"}
 Program structureReused: Not
 Program files::
 /a/lib/lib.d.ts
@@ -226,7 +226,7 @@ Output::
 
 
 Program root files: ["/user/username/projects/myproject/file1.ts","/user/username/projects/myproject/src/file2.ts","/user/username/projects/myproject/src/file3.ts"]
-Program options: {"target":1,"module":2,"outFile":"/user/username/projects/myproject/build/outFile.js","esModuleInterop":true,"forceConsistentCasingInFileNames":true,"strict":true,"skipLibCheck":true,"watch":true,"project":"/user/username/projects/myproject/tsconfig.json","configFilePath":"/user/username/projects/myproject/tsconfig.json"}
+Program options: {"skipLibCheck":true,"target":1,"module":2,"outFile":"/user/username/projects/myproject/build/outFile.js","esModuleInterop":true,"forceConsistentCasingInFileNames":true,"strict":true,"watch":true,"project":"/user/username/projects/myproject/tsconfig.json","configFilePath":"/user/username/projects/myproject/tsconfig.json"}
 Program structureReused: Not
 Program files::
 /a/lib/lib.d.ts

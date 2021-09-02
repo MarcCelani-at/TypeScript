@@ -290,6 +290,13 @@ namespace ts {
             description: Diagnostics.Set_the_language_of_the_messaging_from_TypeScript_This_does_not_affect_emit,
             defaultValueDescription: Diagnostics.Platform_specific
         },
+        {
+            name: "skipLibCheck",
+            type: "boolean",
+            category: Diagnostics.Completeness,
+            description: Diagnostics.Skip_type_checking_all_d_ts_files,
+            defaultValueDescription: "false"
+        },
     ];
 
     /* @internal */
@@ -1093,13 +1100,6 @@ namespace ts {
             transpileOptionValue: undefined,
             description: Diagnostics.Specify_the_output_directory_for_generated_declaration_files,
             defaultValueDescription: "n/a"
-        },
-        {
-            name: "skipLibCheck",
-            type: "boolean",
-            category: Diagnostics.Completeness,
-            description: Diagnostics.Skip_type_checking_all_d_ts_files,
-            defaultValueDescription: "false"
         },
         {
             name: "allowUnusedLabels",

@@ -5246,6 +5246,7 @@ declare namespace ts {
         verbose?: boolean;
         incremental?: boolean;
         assumeChangesOnlyAffectDirectDependencies?: boolean;
+        skipLibCheck?: boolean;
         traceResolution?: boolean;
         [option: string]: CompilerOptionsValue | undefined;
     }

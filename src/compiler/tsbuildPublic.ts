@@ -18,6 +18,7 @@ namespace ts {
         /*@internal*/ pretty?: boolean;
         incremental?: boolean;
         assumeChangesOnlyAffectDirectDependencies?: boolean;
+        skipLibCheck?: boolean;
 
         traceResolution?: boolean;
         /* @internal */ diagnostics?: boolean;
